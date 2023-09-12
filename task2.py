@@ -20,7 +20,6 @@ def logger2(path):
 
     return __logger2
 
-
 def test_2():
     paths = ('log_1.log', 'log_2.log', 'log_3.log')
 
@@ -46,7 +45,6 @@ def test_2():
 
         summator(4.3, b=2.2)
         summator(a=0, b=0)
-
 
 if __name__ == '__main__':
     test_2()

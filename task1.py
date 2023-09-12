@@ -1,7 +1,6 @@
 import os
 from datetime import datetime
 
-
 # 1 Доработать декоратор logger в коде ниже. Должен получиться декоратор, который записывает в файл 'main.log'
 # дату и время вызова функции, имя функции, аргументы, с которыми вызвалась, и возвращаемое значение.
 # Функция test_1 в коде ниже также должна отработать без ошибок.
@@ -17,7 +16,6 @@ def logger(old_function):
         return result
 
     return new_function
-
 
 def test_1():
     path = 'main.log'
@@ -46,7 +44,6 @@ def test_1():
 
     with open(path) as log_file:
         log_file_content = log_file.read()
-
 
 if __name__ == '__main__':
     test_1()
